@@ -5,7 +5,7 @@ the following list can be split into a few small apps - a page for a todo list, 
 Dream list of things to include in project to serve as a reference -
 [x] start next project with tailwindcss
 [x] add shadcn
-[ ] add navbar
+[x] add navbar
 [ ] add dark mode
 [ ] set up postgres db using drizzle orm
 [ ] set up auth using clerk
