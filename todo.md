@@ -3,8 +3,8 @@ React pieces
 the following list can be split into a few small apps - a page for a todo list, a blog, a chat, a store, landing page.
 
 Dream list of things to include in project to serve as a reference -
-[ ] start next project with tailwindcss
-[ ] add shadcn
+[x] start next project with tailwindcss
+[x] add shadcn
 [ ] add navbar
 [ ] add dark mode
 [ ] set up postgres db using drizzle orm
