@@ -6,7 +6,7 @@ Dream list of things to include in project to serve as a reference -
 [x] start next project with tailwindcss
 [x] add shadcn
 [x] add navbar
-[ ] add dark mode
+[x] add dark mode
 [ ] set up postgres db using drizzle orm
 [ ] set up auth using clerk
 [ ] add protected route/s

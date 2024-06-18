@@ -1,6 +1,8 @@
 import Topnav from "~/components/Topnav";
 import "~/styles/globals.css";
 
+import { ThemeProvider } from "../providers/ThemeProvider";
+
 import { GeistSans } from "geist/font/sans";
 
 export const metadata = {
@@ -17,8 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <Topnav />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Topnav />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

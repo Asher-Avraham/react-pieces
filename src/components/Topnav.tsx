@@ -1,45 +1,41 @@
 import Link from "next/link";
+import { ModeToggle } from "~/components/ModeToggle";
 import { Button } from "~/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet";
 
 export default function Component() {
   return (
     <header className="flex h-20 w-full shrink-0 items-center border-b border-gray-200 px-4 dark:border-gray-800 md:px-6">
-      <Link href="#" className="mr-6 flex items-center" prefetch={false}>
-        <Link href="/" className="h-6 w-6">
-          <MountainIcon />
-        </Link>
+      <Link href="/" className="mr-6 flex items-center">
+        <MountainIcon />
         <span className="sr-only">Acme Inc</span>
       </Link>
       <nav className="ml-auto hidden gap-4 lg:flex">
         <Link
           href="/"
           className="text-sm font-medium underline-offset-4 hover:underline"
-          prefetch={false}
         >
           Home
         </Link>
         <Link
           href="/about"
           className="text-sm font-medium underline-offset-4 hover:underline"
-          prefetch={false}
         >
           About
         </Link>
         <Link
           href="/services"
           className="text-sm font-medium underline-offset-4 hover:underline"
-          prefetch={false}
         >
           Services
         </Link>
         <Link
           href="/contact"
           className="text-sm font-medium underline-offset-4 hover:underline"
-          prefetch={false}
         >
           Contact
         </Link>
+        <ModeToggle />
       </nav>
       <Sheet>
         <SheetTrigger asChild>
@@ -55,31 +51,28 @@ export default function Component() {
             <Link
               href="/"
               className="text-sm font-medium underline-offset-4 hover:underline"
-              prefetch={false}
             >
               Home
             </Link>
             <Link
               href="/about"
               className="text-sm font-medium underline-offset-4 hover:underline"
-              prefetch={false}
             >
               About
             </Link>
             <Link
               href="/services"
               className="text-sm font-medium underline-offset-4 hover:underline"
-              prefetch={false}
             >
               Services
             </Link>
             <Link
               href="/contact"
               className="text-sm font-medium underline-offset-4 hover:underline"
-              prefetch={false}
             >
               Contact
             </Link>
+            <ModeToggle />
           </div>
         </SheetContent>
       </Sheet>
